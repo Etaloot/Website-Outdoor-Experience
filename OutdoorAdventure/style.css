@@ -1,0 +1,983 @@
+/* 
+Theme Name: Outdoor Adventure
+Author: Gabi
+Author URI: https://outdoor.com
+Decription: The official theme for Project
+Version: 1.0.0
+*/
+body {
+  
+  margin: 0;
+  
+}
+main{
+  width: 100%;
+  margin: 0 auto;
+ 
+}
+h1,h3{
+   font-family: "Montserrat", sans-serif;
+}
+p {
+  font-weight: 500;
+     font-size: 1.1rem;
+     letter-spacing: 1px;
+  font-family: 'Noto Sans', sans-serif;
+  
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Navigation */
+
+nav {
+  height: 72px;
+  background-color: transparent;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem 0 3rem;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+nav a {
+  padding: 0 22px;
+  color: #eee;
+  font-weight: bold;
+  
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #fb2056;
+  transition: 0.4s;
+}
+nav a:focus {
+  color: #fb2056;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+
+#logo-img {
+  display: flex;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 0 32px;
+  align-items: center;
+}
+
+#logo-img img {
+  height:50px;
+}
+
+#menu-icon {
+  height: 100%;
+  font-size: 28px;
+  padding: 0 4px;
+  color: #fb2056;
+  display: none;
+  align-items: center;
+}
+/* Slideout Menu */
+
+#slideout-menu {
+  
+  background: #2d3436;
+  z-index: 100;
+  position: fixed;
+  transition: 0.4s;
+  margin-top: 72px;
+  width: 100%;
+  text-align: center;
+  opacity:0;
+  pointer-events:none;
+}
+
+#slideout-menu ul {
+  list-style: none;
+  padding: 0 32px;
+}
+
+#slideout-menu ul li {
+  padding: 8px;
+}
+
+#slideout-menu a {
+    font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+/* banner */ 
+#banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("img/pexels-cátia-matos-1072179.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  opacity: 0.9;
+}
+
+#banner h3 {
+  font-size: 1.6rem;
+  color: white;
+  padding-bottom: 1.6rem;
+  border-bottom: 3px solid white;
+}
+
+#banner h1 {
+  color: white; 
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.after-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    background-color: #f4f5f9;
+}
+  .title-upcoming{
+    text-align: center;
+    padding-top: 3rem;
+    font-weight: 800;
+    color: #222222;
+    font-size: 1.2rem;
+    
+  }
+ #section-1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     flex-direction: row;
+     height: 90vh;
+     width: auto;
+    
+     
+ }
+  .card{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   height: 100%;
+ }
+  .card-1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   height: 100%;
+   margin-right: 5rem;
+ }
+ .card-description p{
+   width: 33.5rem;
+ }
+ .section-2{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     flex-direction: row;
+     background-image: url("img/first-down.jpg");
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;
+     height: 90vh;
+     margin-top: 4rem;
+     margin-bottom: 4rem;
+     
+ }
+
+ .card-image{
+   width:100%;
+   height:300px;
+   margin-bottom: 2rem;
+ }
+ .explore{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 50%;
+ }
+ .explore p{
+   color: white;
+   text-align: left;
+   width: 100%;
+   font-weight: bold;
+   
+ }
+ .explore-title{
+   color: white;
+   border-bottom: 4px solid white;
+   padding-bottom: 1rem;
+   width: 100%;
+   text-align: left;
+
+ }
+
+ .section-3{
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+     text-align: center;
+     flex-direction: row;
+     width: 90%;
+     height: 90vh;
+     padding: 2rem 0 9rem 4rem;
+ }
+ .left{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 40%;
+ }
+ .left h1{
+    color: #222222;
+    font-size: 2.1rem;
+ }
+ .right{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: column;
+   width: 50%;
+ 
+ }
+ .up{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   height: 80%;
+ }
+  .up img{
+    margin: 0.5rem;
+    height: 350px;
+    width: 350px;
+ }
+ .down {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+ } 
+ .down img{
+   margin: 0.5rem;
+    height: 200px;
+    width: 350px;
+   
+ } 
+
+ /* Button Learn more */
+
+.btn-learnmore {
+  font-family: 'Noto Sans', sans-serif;
+  display: inline-block;
+  margin-bottom: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: #fb2056;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+        font-size: 0.875rem;
+    border-radius: 60px;
+    padding-top: 15px;
+    padding-right: 33px;
+    padding-bottom: 15px;
+    padding-left: 33px;
+}
+ 
+.take-action {
+  font-family: 'Noto Sans', sans-serif;
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: #fb2056;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+        font-size: 0.875rem;
+    border-radius: 60px;
+    padding-top: 15px;
+    padding-right: 33px;
+    padding-bottom: 15px;
+    padding-left: 33px;
+}
+.take-action:hover{
+  color: white;
+}
+
+.btn-learnmore:hover {
+  cursor: pointer;
+  color: white;
+}
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #191919;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+/* ABOUT PAGE */
+
+#banner-about {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("img/pexels-cátia-matos-1072179.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  opacity: 0.9;
+}
+#banner-about h1{
+    color: white; 
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.after-banner-about{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-top:3rem;
+  padding: 2rem 5rem 2rem 5rem;
+}
+.about-text{
+ width: 50%;
+  color: #222222;
+} 
+.about-text p{
+ width: 90%;
+}
+.about-image{
+   width: 50%;
+}
+.about-image img{
+   width: 600px;
+   height:450px
+  }
+.about-bottom{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 50vh;
+   padding: 2rem 10rem 0.5rem 10rem;
+   color: #222222;
+}
+.big-section-about{
+  padding: 0 5rem;
+}
+.title-about-bottom{
+   text-align:left;
+   width: 60%;
+   margin-right: 2rem;
+}
+.title-about-bottom h1{
+   font-size:1.5rem;
+}
+.title-about-bottom p{
+     font-weight: 500;
+     font-size: 1.1rem;
+     letter-spacing: 1px;
+     padding-top:0.7rem;
+     color: #222222;;
+}
+
+/* SERVICES PAGE*/
+
+#banner-services {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("img/pexels-cátia-matos-1072179.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  opacity: 0.9;
+}
+
+#banner-services h1{
+    color: white; 
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+.title-upcoming-services{
+  text-align: center;
+  
+}
+
+.title-upcoming-services p{
+  margin-top: 4rem;
+}
+.title-upcoming-services h1{
+  color: #222222;;
+}
+
+
+.section-2-services{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #f4f5f9;
+}
+
+.services-bottom{
+ width: 50%;
+  padding: 4rem 10rem 4rem 10rem;
+}
+
+/* PROJECT PAGE */
+
+#banner-projects {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("img/pexels-cátia-matos-1072179.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  opacity: 0.9;
+}
+#banner-projects h1{
+    color: white; 
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.big-projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+ .projects-container{
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   width: auto;
+    padding-left: 14rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+   
+ }
+ .projects-container-grey{
+   background-color: #f7f7f7;
+   width: 100%;
+   padding-left: 14rem;
+   padding-top: 5rem;
+    padding-bottom: 5rem;
+ }
+ .title-upcoming-projects{
+   text-align: left;
+ }
+ .title-upcoming-projects h1,h4{
+   font-family: "Montserrat", sans-serif;
+    color: #222222;
+ }
+ .card-image-projects{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   
+ }
+ .card-image-projects img{
+   width: 250px;
+   height: 250px;
+ }
+ /* CONTACT PAGE */
+#banner-contact {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("img/pexels-cátia-matos-1072179.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  opacity: 0.9;
+}
+#banner-contact h1{
+    color: white; 
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+ .contact-container{
+   display: flex;
+   justify-content:flex-start;
+   flex-direction: row;
+   padding: 5rem 3rem 5rem 3rem;
+   margin-left: 8rem;
+ }
+ .contact-form{
+   display: flex;
+   justify-content:center;
+   flex-direction: column;
+   margin-right: 4rem;
+   width: 40%;
+ }
+ .contact-form a{
+   width: 200px;
+ }
+ .contact-form h1, .contact-info h1{
+   color: #222222;
+ }
+ .contact-form input{
+   margin-bottom: 1.6rem;
+   padding: 1rem;
+   background-color: #fafafa;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 1.2rem;
+ }
+ .contact-form textarea{
+   margin-bottom: 1.5rem;
+   padding: 1rem;
+   background-color: #fafafa;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 1.3rem;
+ }
+ .contact-info{
+   width: 50%;
+ }
+
+ .btn-learnmore .cntc{
+   width: 200px;
+ }
+
+ .social-icons{
+   display: flex;
+   justify-content:left;
+   align-items:center;
+   flex-direction: row;
+ }
+
+ .fa-facebook-f{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+  background-color: #1778f2;
+  border-radius: 50px;
+  color: white;
+  width:40px;
+  height:40px;
+  margin-right: 0.5rem;
+ }
+ .fa-twitter{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+  background-color: #1da1f2;
+  border-radius: 50px;
+  color: white;
+  width:40px;
+  height:40px;
+  margin-right: 0.5rem;
+ }
+ .fa-google{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+  background-color: #ea4434;
+  border-radius: 50px;
+  color: white;
+  width:40px;
+  height:40px;
+  margin-right: 0.5rem;
+ }
+
+ .fa-twitter:hover,.fa-google:hover, .fa-facebook-f:hover{
+    transform: scale(1.1);
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+   cursor: pointer;
+ }
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+  /* PROJECT PAGE */
+  .big-projects{
+    margin: 0 auto;
+  }
+#banner-projects h1{
+    color: white; 
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+ .projects-container{
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   padding: 0 1rem 0 1.4rem;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   
+ }
+ .projects-container-grey{
+   background-color: #f7f7f7;
+  padding: 0 1rem 0 1.4rem;
+   width: auto;
+ }
+ .projects-container-grey p, .projects-container p{
+   font-size: 15px;
+ }
+ .title-upcoming-projects{
+   text-align: left;
+ }
+ .title-upcoming-projects h1{
+   font-size: 26px;
+ }
+
+ .card-image-projects{
+  display: flex;
+  flex-direction: row;
+}
+ .card-image-projects img{
+     width: 200px;
+     height:200px;
+     margin: 0.5rem;
+   
+ }
+  
+  /* CONTACT PAGE QUERY*/
+   #banner-contact h1{
+     font-size: 28px;
+   }
+  .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 2rem;
+  }
+  .contact-form{
+    margin: 1rem 4rem 1rem 0;
+    width:100%;
+  }
+   
+  .contact-info{
+    width:100%;
+  }
+  
+ 
+}
+
+@media only screen and  (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+    #section-1{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    margin-top: 13rem;
+    margin-bottom: 15rem;
+    width: 100%;
+  }
+  .explore{
+    text-align: center;
+    width: 80%;
+    
+  }
+  .section-2{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+   .section-3{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top:3rem;
+     margin-bottom: 10rem;
+     padding-left: 2rem;
+   }
+   .left{
+     margin-top: 5rem;
+     width: 100%;
+   }
+  #menu-icon {
+    display: flex;
+  }
+  .title-upcoming{
+    padding-bottom: 2rem;
+  }
+
+  #slideout-menu {
+    display: block;
+  }
+  footer{
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+
+
+@media only screen and  (max-width: 778px) {
+  #banner h1 {
+    font-size: 23px;
+  }
+
+  .after-banner p{
+      font-size: 17px;
+  }
+   .section-3{
+     padding-left: 1rem;
+   }
+  .card {
+    text-align: center;
+  }
+
+  #logo-img  img{
+    padding-top: 1rem;
+    height: 40px;
+    width: 120px;
+}
+
+/* PROJECT PAGE */
+  .big-projects{
+    margin: 0 auto;
+  }
+#banner-projects h1{
+    color: white; 
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+ .projects-container{
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   padding: 0 1rem 0 1.4rem;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   
+ }
+ .projects-container-grey{
+   background-color: #f7f7f7;
+  padding: 0 1rem 0 1.4rem;
+   width: auto;
+ }
+ .projects-container-grey p, .projects-container p{
+   font-size: 15px;
+ }
+ .title-upcoming-projects{
+   text-align: left;
+ }
+ .title-upcoming-projects h1{
+   font-size: 26px;
+ }
+
+ .card-image-projects{
+  display: flex;
+  flex-direction: column;
+}
+ .card-image-projects img{
+     max-width: 100%;
+     height: auto;
+   
+ }
+
+   /* CONTACT PAGE QUERY*/
+   #banner-contact h1{
+     font-size: 28px;
+   }
+  .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem;
+  }
+  .contact-form{
+    margin: 1rem 0 1rem 0;
+    width:100%;
+  }
+   .contact-form h1, .contact-info h1{
+     font-size: 22px;
+  }
+  .contact-info{
+    width:100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+    .title-upcoming h1{
+      font-size: 2.3rem;
+    }
+    .section-1{
+      padding: 2rem 4rem 2rem 4rem;
+      width: 200px;
+    }
+ 
+  .section-3{
+    margin-top: 25rem;
+    margin-bottom: 20rem;
+  }
+
+  .up, .down{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+  }
+   .left h1{
+     font-size:20px;
+   }
+  .title-upcoming h1{
+    font-size: 16px;
+    padding-bottom:3rem;
+  }
+
+  .card-image{
+    margin-bottom:0;
+  }
+    
+
+  #banner h3 {
+    font-size: 20px;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  #logo-img {
+    padding: 0;
+  }
+  /* PROJECT PAGE */
+  .big-projects{
+    margin: 0 auto;
+  }
+#banner-projects h1{
+    color: white; 
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+ .projects-container{
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   padding: 0 1rem 0 1.6rem;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   
+ }
+ .projects-container-grey{
+   background-color: #f7f7f7;
+  padding: 0 1rem 0 1.6rem;
+   width: auto;
+ }
+ .projects-container-grey p, .projects-container p{
+   font-size: 15px;
+ }
+ .title-upcoming-projects{
+   text-align: left;
+ }
+ .title-upcoming-projects h1{
+   font-size: 26px;
+ }
+.card-image-projects{
+  display: flex;
+  flex-direction: column;
+}
+ 
+ .card-image-projects img{
+   width: 270px;
+   height: 200px;
+   margin-right: 0;
+   
+ }
+
+  /* CONTACT PAGE QUERY*/
+   #banner-contact h1{
+     font-size: 28px;
+   }
+  .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem;
+  }
+  .contact-form{
+    margin: 1rem 0 1rem 0;
+    width:100%;
+  }
+   .contact-form h1, .contact-info h1{
+     font-size: 22px;
+  }
+  .contact-info{
+    width:100%;
+  }
+}
